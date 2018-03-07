@@ -1,0 +1,220 @@
+<html>
+	<head>
+		<meta charset="gb2312" /> 
+		<style type="text/CSS">
+			body
+			{
+				background-color:#FF8000;
+				margin:0px; padding:0px; 
+				/* overflow:hidden; */
+			}
+			
+			a
+			{
+				font-size:12px;
+				margin:30px;
+			}
+			a:link {color:#663000;}	/* 未被访问的链接 */
+			a:visited {color:#663000;}	/* CC7000已被访问的链接 */
+			a:hover {color:#FF00FF;}	/* 鼠标指针移动到链接上 */
+			a:active {color:#00FFFF;}	/* 正在被点击的链接 */
+					
+			b
+			{
+				font-size:12px;
+				margin:30px;
+			}
+			p
+			{
+				color:#663000;
+				font-size:18px;
+				margin:1px 0px 0px 8px;
+				text-shadow:1px 1px 2px #555555;
+				cursor:pointer;
+				font-family:'Consolas';
+				font-weight:bold;
+			}
+			
+			#sel
+			{
+				color:#FFC000;
+				font-size:15px;
+				margin:0px 0px 0px 0px;
+				/*text-shadow:0px 0px 3px #FFFFFF;*/
+				cursor:pointer;
+				font-family:'Consolas';
+			}
+			
+			#main
+			{
+				margin:0px; padding:0px; 
+				background-color:#FF9000;
+			}
+									
+		</style>
+	</head>
+	<body><!-- onload="display()">-->
+		<div style="text-align:left;margin:10px 10px 10px 5px;"></div>
+						
+		<div id="main" style="color:blue" onclick="document.getElementById('child0').style.display=(document.getElementById('child0').style.display =='none')?'':'none';document.getElementById('add0').style.display=(document.getElementById('add0').style.display =='none')?'':'none';document.getElementById('plus0').style.display=(document.getElementById('plus0').style.display =='none')?'':'none';"><p><span id="add0" style="display:">- </span><span id="plus0" style="display:none">+ </span>内存管理分析</p></div>
+			<div id="child0" style="display:;padding:10px 10px 10px 5px;">
+				<a href="101.htm" target="right">内存全局管理数据结构图</a><br>
+				<a href="102.htm" target="right">内存初始结构</a><br>
+				<a href="103.htm" target="right">Linux内存管理框架</a><br>
+				<a href="104.htm" target="right">地址映射全过程</a><br>
+				<a href="105.htm" target="right">重要数据结构和函数</a><br>
+				<a href="106.htm" target="right">越界访问/用户堆栈扩展</a><br>
+				<a href="107.htm" target="right">物理页面的周转</a><br>
+				<a href="108.htm" target="right">物理页面的分配</a><br>
+				<a href="109.htm" target="right">页面的定期换出</a><br>
+				<a href="110.htm" target="right">页面的换入</a><br>
+				<a href="111.htm" target="right">关于swapper_space</a><br>
+				<a href="112.htm" target="right">Slab缓冲区</a><br>
+				<a href="113.htm" target="right">外部设备空间映射</a><br>
+				<a href="114.htm" target="right">系统调用brk(malloc)</a><br>
+				<a href="115.htm" target="right">系统调用mmap</a><br>
+				<a href="508.htm" target="right">Linux内存管理的实质</a><br>
+			</div>
+		</div>
+		<div id="main" style="color:blue" onclick="document.getElementById('child1').style.display=(document.getElementById('child1').style.display =='none')?'':'none';document.getElementById('add1').style.display=(document.getElementById('add1').style.display =='none')?'':'none';document.getElementById('plus1').style.display=(document.getElementById('plus1').style.display =='none')?'':'none';"><p><span id="add1" style="display:">- </span><span id="plus1" style="display:none">+ </span>进程管理分析</p></div>
+			<div id="child1" style="display:;padding:10px 10px 10px 5px;">
+				<a href="501.htm" target="right">内核进程架构概述</a><br>
+				<a href="502.htm" target="right">fork与vfork</a><br>
+				<a href="503.htm" target="right">kernel_thread的实现</a><br>
+				<a href="504.htm" target="right">进程管理的几个特殊定时器</a><br>
+				<a href="506.htm" target="right">内核进程切换机制主流程</a><br>
+				<a href="507.htm" target="right">0号进程手工构造过程</a><br>
+				<a href="5071.htm" target="right">COW与vm_area_struct</a><br>
+				<a href="505.htm" target="right">ELF文件格式</a><br>
+				<a href="601.htm" target="right">几个和调试相关的工具</a><br>
+			</div>
+		</div>
+		<div id="main" style="color:blue" onclick="document.getElementById('child2').style.display=(document.getElementById('child2').style.display =='none')?'':'none';document.getElementById('add2').style.display=(document.getElementById('add2').style.display =='none')?'':'none';document.getElementById('plus2').style.display=(document.getElementById('plus2').style.display =='none')?'':'none';"><p><span id="add2" style="display:">- </span><span id="plus2" style="display:none">+ </span>中断管理分析</p></div>
+			<div id="child2" style="display:;padding:10px 10px 10px 5px;">
+				<a href="201.htm" target="right">x86的异常和中断</a><br>
+				<a href="202.htm" target="right">中断框架和IDT初始化</a><br>
+				<a href="203.htm" target="right">中断的响应和服务</a><br>
+				<a href="204.htm" target="right">页面异常的处理</a><br>
+				<a href="205.htm" target="right">软中断处理框架</a><br>
+				<a href="206.htm" target="right">时钟中断的处理</a><br>
+				<a href="207.htm" target="right">系统调用的实现</a><br>
+			</div>
+		</div>
+		<div id="main" style="color:blue" onclick="document.getElementById('child3').style.display=(document.getElementById('child3').style.display =='none')?'':'none';document.getElementById('add3').style.display=(document.getElementById('add3').style.display =='none')?'':'none';document.getElementById('plus3').style.display=(document.getElementById('plus3').style.display =='none')?'':'none';"><p><span id="add3" style="display:">- </span><span id="plus3" style="display:none">+ </span>系统引导与X86架构</p></div>
+			<div id="child3" style="display:;padding:10px 10px 10px 5px;">
+				<a href="att001.htm" target="right">LinuxX86启动协议</a><br>
+				<a href="301.htm" target="right">系统加电至BIOS初始化</a><br>
+				<a href="302.htm" target="right">磁盘的引导过程</a><br>
+				<a href="303.htm" target="right">内核文件生成过程</a><br>
+				<a href="att002.htm" target="right">bzImage生成过程详细分析</a><br>				
+				<a href="304.htm" target="right">bootsect.S 流程</a><br>
+				<a href="305.htm" target="right">setup.S 流程</a><br>
+				<a href="306.htm" target="right">i386/comp../head.S</a><br>
+				<a href="307.htm" target="right">i386/kernel/head.S</a><br>
+				<a href="308.htm" target="right">X86段式寻址</a><br>
+				<a href="309.htm" target="right">X86页式寻址</a><br>
+				<a href="310.htm" target="right">X86高速缓存</a><br>
+				<a href="311.htm" target="right">X86 EFLAGS寄存器</a><br>
+				<a href="312.htm" target="right">X86 中断与iret</a><br>
+			</div>
+		</div>
+		<div id="main" style="color:blue" onclick="document.getElementById('child4').style.display=(document.getElementById('child4').style.display =='none')?'':'none';document.getElementById('add4').style.display=(document.getElementById('add4').style.display =='none')?'':'none';document.getElementById('plus4').style.display=(document.getElementById('plus4').style.display =='none')?'':'none';"><p><span id="add4" style="display:">- </span><span id="plus4" style="display:none">+ </span>内核网络实现</p></div>
+			<div id="child4" style="display:;padding:10px 10px 10px 5px;">
+				<b>1 sk_buff</b><br>
+				<a href="551.htm" target="right">网络相关的内核基础1</a><br>
+				<a href="552.htm" target="right">网络相关的内核基础2</a><br>
+				<a href="553.htm" target="right">sk_buff数据结构</a><br>
+				<a href="554.htm" target="right">sk_buff操作</a><br>
+				<a href="555.htm" target="right">sk_buff_head</a><br>
+				<a href="556.htm" target="right">内核中的sk_buff</a><br>
+				<a href="557.htm" target="right">sk_buff接收过程</a><br>
+				<br><b>2 以太网驱动程序</b><br>
+				<a href="558.htm" target="right">hyfw struct</a><br>
+				<a href="559.htm" target="right">以太网封装格式</a><br>
+				<a href="560.htm" target="right">e1000设备注册</a><br>
+				<a href="561.htm" target="right">e1000驱动架构</a><br>
+				<a href="562.htm" target="right">ifconfig实现</a><br>
+				<br><b>3 ARP与ICMP</b><br>
+				<a href="563.htm" target="right">arp数据结构</a><br>
+				<a href="564.htm" target="right">arp的状态演化</a><br>
+				<a href="565.htm" target="right">arp协议操作</a><br>
+				<a href="566.htm" target="right">icmp协议整体架构</a><br>
+				<a href="567.htm" target="right">icmp网络不可达</a><br>
+				<a href="568.htm" target="right">icmp主机不可达</a><br>
+				<a href="569.htm" target="right">icmp协议不可达</a><br>
+				<a href="570.htm" target="right">icmp端口不可达</a><br>
+				<a href="571.htm" target="right">icmp需要分片</a><br>
+				<a href="572.htm" target="right">icmp源站选路失败</a><br>
+				<a href="573.htm" target="right">icmp回显请求应答</a><br>
+				<a href="574.htm" target="right">icmp时间戳请求应答</a><br>
+				<a href="575.htm" target="right">icmp其他情况</a><br>
+				<br><b>4 路由</b><br>
+				<a href="621.htm" target="right">注册三层四层协议</a><br>
+				<a href="622.htm" target="right">IP协议处理流程</a><br>
+				<a href="623.htm" target="right">路由和转发概念</a><br>
+				<a href="624.htm" target="right">基于规则的路由基础</a><br>
+				<a href="625.htm" target="right">路由规则数据结构和操作</a><br>
+				<a href="626.htm" target="right">路由表数据结构</a><br>
+				<a href="627.htm" target="right">netdev和路由表,路由表管理</a><br>
+				<a href="628.htm" target="right">路由缓存数据结构</a><br>
+				<a href="629.htm" target="right">IP数据包转发过程</a><br>
+				<a href="630.htm" target="right">路由缓存回收机制</a><br>
+				<a href="631.htm" target="right">分片和重组简介</a><br>
+				<a href="632.htm" target="right">报文分片详解</a><br>
+				<a href="633.htm" target="right">分片收集和重组</a><br>
+				<a href="634.htm" target="right">分片的收集</a><br>
+				<a href="635.htm" target="right">分片的重组</a><br>
+				<br><b>5 vlan和桥接</b><br>
+				<a href="636.htm" target="right">vlan数据结构</a><br>
+				<a href="637.htm" target="right">vlan setup </a><br>
+				<a href="638.htm" target="right">vlan receive</a><br>
+				<a href="639.htm" target="right">vlan register</a><br>
+				<a href="640.htm" target="right">vlan xmit</a><br>
+				<a href="641.htm" target="right">bridge数据结构</a><br>
+				<a href="642.htm" target="right">add bridge</a><br>
+				<a href="643.htm" target="right">add port(actual netdevice)</a><br>
+				<a href="644.htm" target="right">packet through kernel</a><br>
+				<a href="645.htm" target="right">br_pass_frame_up</a><br>
+				<a href="646.htm" target="right">br_flood_forward</a><br>
+				<br><b>6 TCP、UDP和Socker</b><br>
+				<a href="651.htm" target="right">UDP Process</a><br>
+				<a href="652.htm" target="right">TCP传输控制</a><br>
+				<a href="653.htm" target="right">TCP成块数据流</a><br>
+				<a href="654.htm" target="right">TCP超时重传</a><br>
+				<a href="655.htm" target="right">TCP内核实现流程</a><br>
+				<a href="656.htm" target="right">socket概念介绍</a><br>
+				<a href="657.htm" target="right">sys_socket创建插口</a><br>
+				<a href="658.htm" target="right">socket相关数据结构</a><br>
+				<a href="659.htm" target="right">sys_bind指定插口地址</a><br>
+				<a href="660.htm" target="right">sys_listen设定server插口</a><br>
+				<a href="661.htm" target="right">sys_accept接受连接请求</a><br>
+				<a href="662.htm" target="right">sys_connect请求连接</a><br>
+				<a href="663.htm" target="right">接受报文</a><br>
+				<a href="664.htm" target="right">发送报文</a><br>
+				<a href="665.htm" target="right">PF_PACKET Sockets</a><br>
+				<a href="666.htm" target="right">PF_NETLINK Sockets</a><br>
+			</div>
+		</div>
+		<div id="main" style="color:blue" onclick="document.getElementById('child5').style.display=(document.getElementById('child5').style.display =='none')?'':'none';document.getElementById('add5').style.display=(document.getElementById('add5').style.display =='none')?'':'none';document.getElementById('plus5').style.display=(document.getElementById('plus5').style.display =='none')?'':'none';"><p><span id="add5" style="display:">- </span><span id="plus5" style="display:none">+ </span>内核netfilter实现</p></div>
+			<div id="child5" style="display:;padding:10px 10px 10px 5px;">
+				<a href="671.htm" target="right">netfilter架构</a><br>
+				<a href="672.htm" target="right">netfilter hook的管理</a><br>
+				<a href="673.htm" target="right">linux中的hook</a><br>
+				<a href="674.htm" target="right">sockopt的管理</a><br>
+				<a href="675.htm" target="right">iptables整体架构</a><br>
+				<a href="676.htm" target="right">iptables数据结构</a><br>
+				<a href="677.htm" target="right">iptables内建filter表</a><br>
+				<a href="678.htm" target="right">iptables命令</a><br>
+				<a href="679.htm" target="right">一个复杂例子</a><br>
+				<a href="680.htm" target="right">连接跟踪主要数据结构</a><br>
+				<a href="681.htm" target="right">连接跟踪实现</a><br>
+				<a href="682.htm" target="right">连接状态演化</a><br>
+				<a href="683.htm" target="right">conntrack nat数据结构</a><br>
+				<a href="684.htm" target="right">conntrack nat具体实现</a><br>
+				<a href="685.htm" target="right">conntrack nat状态演化</a><br>
+			</div>
+		</div>
+		<br><br><br><br>
+	</body>	
+</html>
+

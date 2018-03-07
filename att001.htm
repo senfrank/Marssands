@@ -1,0 +1,629 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=gb2312">
+<meta name=Generator content="Microsoft Word 15 (filtered)">
+<title>1、</title>
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:宋体;
+	panose-1:2 1 6 0 3 1 1 1 1 1;}
+@font-face
+	{font-family:黑体;
+	panose-1:2 1 6 9 6 1 1 1 1 1;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:"\@黑体";
+	panose-1:2 1 6 9 6 1 1 1 1 1;}
+@font-face
+	{font-family:"\@宋体";
+	panose-1:2 1 6 0 3 1 1 1 1 1;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	font-size:10.5pt;
+	font-family:"Times New Roman",serif;}
+h1
+	{mso-style-name:"Heading 1\,heading 1";
+	margin-top:17.0pt;
+	margin-right:0cm;
+	margin-bottom:16.5pt;
+	margin-left:21.25pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	text-indent:-21.25pt;
+	page-break-after:avoid;
+	layout-grid-mode:char;
+	font-size:18.0pt;
+	font-family:"Times New Roman",serif;
+	layout-grid-mode:line;}
+h2
+	{mso-style-name:"Heading 2\,heading 2";
+	margin-top:13.0pt;
+	margin-right:0cm;
+	margin-bottom:13.0pt;
+	margin-left:49.6pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	text-indent:-49.6pt;
+	page-break-after:avoid;
+	layout-grid-mode:char;
+	font-size:14.0pt;
+	font-family:"Arial",sans-serif;}
+h3
+	{mso-style-name:"Heading 3\,heading 3";
+	margin-top:13.0pt;
+	margin-right:0cm;
+	margin-bottom:13.0pt;
+	margin-left:0cm;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	text-indent:0cm;
+	line-height:12.0pt;
+	page-break-after:avoid;
+	layout-grid-mode:char;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;
+	layout-grid-mode:line;}
+h4
+	{mso-style-name:"Heading 4\,heading 4";
+	margin-top:14.0pt;
+	margin-right:0cm;
+	margin-bottom:14.5pt;
+	margin-left:0cm;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	text-indent:0cm;
+	line-height:12.0pt;
+	page-break-after:avoid;
+	layout-grid-mode:char;
+	font-size:12.0pt;
+	font-family:宋体;
+	font-weight:normal;}
+p.MsoNormalIndent, li.MsoNormalIndent, div.MsoNormalIndent
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	text-indent:21.0pt;
+	font-size:10.5pt;
+	font-family:"Times New Roman",serif;}
+p.MsoHeader, li.MsoHeader, div.MsoHeader
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:center;
+	layout-grid-mode:char;
+	border:none;
+	padding:0cm;
+	font-size:9.0pt;
+	font-family:"Times New Roman",serif;}
+p.MsoFooter, li.MsoFooter, div.MsoFooter
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	layout-grid-mode:char;
+	font-size:9.0pt;
+	font-family:"Times New Roman",serif;}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:#954F72;
+	text-decoration:underline;}
+p.MsoDocumentMap, li.MsoDocumentMap, div.MsoDocumentMap
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	background:navy;
+	font-size:10.5pt;
+	font-family:"Times New Roman",serif;}
+pre
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:宋体;}
+ /* Page Definitions */
+ @page WordSection1
+	{size:595.3pt 841.9pt;
+	margin:72.0pt 90.0pt 72.0pt 90.0pt;
+	layout-grid:15.6pt;}
+div.WordSection1
+	{page:WordSection1;}
+ /* List Definitions */
+ ol
+	{margin-bottom:0cm;}
+ul
+	{margin-bottom:0cm;}
+.STYLE1 {font-family: "宋体"}
+-->
+</style>
+
+</head>
+
+<body lang=EN-US link=blue vlink="#954F72" style='text-justify-trim:punctuation'>
+
+<div class=WordSection1 style='layout-grid:15.6pt'>
+
+<h1>LinuxX86启动协议</h1>
+frank_seng(frank_seng@163.com)
+<h1>1 <span lang=ZH-CN style='font-family:黑体'>概述</span></h1>
+<p class=MsoNormalIndent><span lang=ZH-CN style='font-family:宋体'>在</span>i386<span
+lang=ZH-CN style='font-family:宋体'>平台上，</span>Linux<span lang=ZH-CN
+style='font-family:宋体'>内核采用了相当复杂的启动协议。为什么非要弄得这么复杂呢？部分是由于历史的原因造成的，还有就是在复杂的</span>PC<span
+lang=ZH-CN style='font-family:宋体'>内存模型之上构建能作为一个可启动的映像的内核；最后就是由于实模式</span>DOS<span
+lang=ZH-CN style='font-family:宋体'>系统一直作为主流操作系统，但是</span>PC<span lang=ZH-CN
+style='font-family:宋体'>工业的发展远远超过了人们原来的期望。当前存在四个版本的</span>Linux/i386<span
+lang=ZH-CN style='font-family:宋体'>启动协议。</span></p>
+
+<p class=MsoNormalIndent style='margin-left:42.0pt;text-indent:-21.0pt'>1.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><span lang=ZH-CN style='font-family:宋体'>老的内核：仅仅支持</span>zImage/Image<span
+lang=ZH-CN style='font-family:宋体'>，还有些非常早的老内核甚至不支持命令行；</span></p>
+
+<p class=MsoNormalIndent style='margin-left:42.0pt;text-indent:-21.0pt'>2.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>2.00<span lang=ZH-CN style='font-family:宋体'>协议</span>(Kernel 1.3.73)<span
+lang=ZH-CN style='font-family:宋体'>：增加了</span>bzImage<span lang=ZH-CN
+style='font-family:宋体'>和</span>initrd<span lang=ZH-CN style='font-family:宋体'>支持，以及在</span>boot
+loader<span lang=ZH-CN style='font-family:宋体'>和内核之间通信的约定方法。</span>setup.S<span
+lang=ZH-CN style='font-family:宋体'>使得重定位成为可能，传统的</span>setup<span lang=ZH-CN
+style='font-family:宋体'>区域依然假定可写；</span></p>
+
+<p class=MsoNormalIndent style='margin-left:42.0pt;text-indent:-21.0pt'>3.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>2.01<span lang=ZH-CN style='font-family:宋体'>协议</span>(Kernel 1.3.76)<span
+lang=ZH-CN style='font-family:宋体'>：增加了堆溢出警告；</span></p>
+
+<p class=MsoNormalIndent style='margin-left:42.0pt;text-indent:-21.0pt'>4.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>2.02<span lang=ZH-CN style='font-family:宋体'>协议</span>(Kernel
+2.4.0-test3-pre3)<span lang=ZH-CN style='font-family:宋体'>：设置了新的命令行协议。降低了常规内存上限（常规内存指的是</span>0<span
+lang=ZH-CN style='font-family:宋体'>－</span>640K<span lang=ZH-CN
+style='font-family:宋体'>的内存区，通常也称之为低内存；高端内存是指位于常规内存之上的</span>384K<span
+lang=ZH-CN style='font-family:宋体'>内存，程序一般不能使用这个内存区域；超过</span>1M<span
+lang=ZH-CN style='font-family:宋体'>的内存都是扩展内存）。不再覆盖传统的</span>setup<span
+lang=ZH-CN style='font-family:宋体'>区域，因此使得使用</span>EBDA<span lang=ZH-CN
+style='font-family:宋体'>的系统启动更加安全。不赞成使用</span>zImage<span lang=ZH-CN
+style='font-family:宋体'>（但依然支持）；</span></p>
+
+<h1>2 <span lang=ZH-CN style='font-family:黑体'>内存分布</span></h1>
+
+<p class=MsoNormalIndent><span lang=ZH-CN style='font-family:宋体'>传统的用于</span>Image<span
+lang=ZH-CN style='font-family:宋体'>或者</span>zImage<span lang=ZH-CN
+style='font-family:宋体'>的内核加载程序的内存映射如下：</span></p>
+<p class=MsoNormalIndent>&nbsp;</p>
+<p class=MsoNormalIndent STYLE1>&nbsp;<img src="att001.png"/></p>
+<p class=MsoNormalIndent STYLE1>&nbsp;</p>
+<p class=MsoNormalIndent><span lang=ZH-CN style='font-family:宋体'>当使用</span>bzImage<span
+lang=ZH-CN style='font-family:宋体'>的时候，保护模式的内核被分配在</span>0x100000<span
+lang=ZH-CN style='font-family:宋体'>处（“高端内存”），内核的实模式块（</span>bootsector,setup,stack/heap<span
+lang=ZH-CN style='font-family:宋体'>）分配在</span>0x10000<span lang=ZH-CN
+style='font-family:宋体'>和底端内存结束处之间的任一位置。不幸的是，在</span>2.00<span lang=ZH-CN
+style='font-family:宋体'>和</span>2.01<span lang=ZH-CN style='font-family:宋体'>协议中，命令行需要位于</span>0x9XXXX<span
+lang=ZH-CN style='font-family:宋体'>中，该段内存在早期的内核中会被覆盖，</span>2.02<span
+lang=ZH-CN style='font-family:宋体'>修补了这个问题。</span></p>
+
+<p class=MsoNormalIndent><span lang=ZH-CN style='font-family:宋体'>由于一些新版的</span>BIOS<span
+lang=ZH-CN style='font-family:宋体'>已经开始在接近常规内存的顶端处分配相当大数量的内存（称之为扩展</span>BIOS<span
+lang=ZH-CN style='font-family:宋体'>数据区），因此尽可能让内存上限（常规内存中</span>bootloader<span
+lang=ZH-CN style='font-family:宋体'>可触及到的最高点）越低越好。</span>Bootloader<span
+lang=ZH-CN style='font-family:宋体'>应该使用“</span>INT 12h<span lang=ZH-CN
+style='font-family:宋体'>”</span>BIOS<span lang=ZH-CN style='font-family:宋体'>调用来验证可用的常规内存。</span></p>
+
+<p class=MsoNormalIndent><span lang=ZH-CN style='font-family:宋体'>当然，如果</span>INT
+12h<span lang=ZH-CN style='font-family:宋体'>报告内存数量太低，</span>bootloader<span
+lang=ZH-CN style='font-family:宋体'>除了给用户报告一个错误之外毫无办法。因此</span>Bootloader<span
+lang=ZH-CN style='font-family:宋体'>的设计应该考虑到尽可能的占用最少的常规内存空间。对于</span>zImage<span
+lang=ZH-CN style='font-family:宋体'>和老的</span>bzImage<span lang=ZH-CN
+style='font-family:宋体'>内核而言，其会需要在</span>0x90000<span lang=ZH-CN
+style='font-family:宋体'>段写入数据，</span>boot loader<span lang=ZH-CN
+style='font-family:宋体'>应该确保不要使用</span>0x9A000<span lang=ZH-CN style='font-family:
+宋体'>点以上的内存；很多的</span>BIOS<span lang=ZH-CN style='font-family:宋体'>会向下延伸覆盖这点。</span></p>
+
+<h1>3 <span lang=ZH-CN style='font-family:黑体'>实模式内核</span>Header</h1>
+
+<p class=MsoNormalIndent><span lang=ZH-CN style='font-family:宋体'>下面的描述中，一个扇区指</span>512<span
+lang=ZH-CN style='font-family:宋体'>字节。其独立于实际介质的扇区尺寸。加载</span>Linux<span
+lang=ZH-CN style='font-family:宋体'>内核的第一步应该是加载实模式代码</span>(bootsect<span
+lang=ZH-CN style='font-family:宋体'>和</span>setup<span lang=ZH-CN
+style='font-family:宋体'>代码</span>)<span lang=ZH-CN style='font-family:宋体'>，然后检查</span>0x01f1<span
+lang=ZH-CN style='font-family:宋体'>偏移处的头部。实模式代码最大</span>32K(<span lang=ZH-CN
+style='font-family:宋体'>也就是</span>setup+bootloader)<span lang=ZH-CN
+style='font-family:宋体'>，</span>bootloader<span lang=ZH-CN style='font-family:
+宋体'>也可以仅仅读取开始的两个扇区</span>(1K)<span lang=ZH-CN style='font-family:宋体'>的代码，然后检测其中的</span>bootup<span
+lang=ZH-CN style='font-family:宋体'>扇区尺寸。</span>Header <span lang=ZH-CN
+style='font-family:宋体'>一般如下：</span></p>
+
+<p class=MsoNormalIndent>&nbsp;</p>
+
+<p class=MsoNormalIndent>Offset&nbsp;&nbsp;&nbsp;&nbsp; Proto&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Name&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Meaning</p>
+
+<p class=MsoNormalIndent>/Size</p>
+
+<p class=MsoNormalIndent><span style='color:red'>01F1/1&nbsp;&nbsp;&nbsp; ALL &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; setup_sects&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The
+size of the setup in sectors </span></p>
+
+<p class=MsoNormalIndent><span style='color:red'>01F2/2&nbsp;&nbsp;&nbsp; ALL &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; root_flags&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; If
+set, the root is mounted readonly</span></p>
+
+<p class=MsoNormalIndent><span style='color:red'>01F4/2&nbsp;&nbsp;&nbsp; ALL &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; syssize&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; DO
+NOT USE - for bootsect.S use only</span></p>
+
+<p class=MsoNormalIndent><span style='color:red'>01F6/2&nbsp;&nbsp;&nbsp; ALL &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; swap_dev&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; DO
+NOT USE – obsolete //</span><span lang=ZH-CN style='font-family:宋体;color:red'>废弃的</span></p>
+
+<p class=MsoNormalIndent><span style='color:red'>01F8/2&nbsp;&nbsp;&nbsp; ALL &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ram_size&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; DO
+NOT USE - for bootsect.S use only</span></p>
+
+<p class=MsoNormalIndent><span style='color:red'>01FA/2&nbsp;&nbsp;&nbsp; ALL &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; vid_mode &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Video
+mode control</span></p>
+
+<p class=MsoNormalIndent><span style='color:red'>01FC/2&nbsp;&nbsp;&nbsp; ALL &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; root_dev&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Default
+root device number</span></p>
+
+<p class=MsoNormalIndent><span style='color:red'>01FE/2&nbsp;&nbsp;&nbsp; ALL &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; boot_flag &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0xAA55
+magic number</span></p>
+
+<p class=MsoNormalIndent>0200/2&nbsp;&nbsp;&nbsp; 2.00+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; jump&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Jump
+instruction</p>
+
+<p class=MsoNormalIndent>0202/4&nbsp;&nbsp;&nbsp; 2.00+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; header&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Magic
+signature &quot;HdrS&quot;</p>
+
+<p class=MsoNormalIndent>0206/2&nbsp;&nbsp;&nbsp; 2.00+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; version&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Boot
+protocol version supported</p>
+
+<p class=MsoNormalIndent>0208/4&nbsp;&nbsp;&nbsp; 2.00+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; realmode_swtch&nbsp;&nbsp;&nbsp;&nbsp; Boot
+loader hook (see below)</p>
+
+<p class=MsoNormalIndent>020C/4&nbsp;&nbsp;&nbsp; 2.00+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; start_sys&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Points
+to kernel version string</p>
+
+<p class=MsoNormalIndent>0210/1&nbsp;&nbsp;&nbsp; 2.00+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; type_of_loader&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Boot
+loader identifier</p>
+
+<p class=MsoNormalIndent>0211/1&nbsp;&nbsp;&nbsp;&nbsp; 2.00+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; loadflags &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Boot
+protocol option flags</p>
+
+<p class=MsoNormalIndent>0212/2&nbsp;&nbsp;&nbsp; 2.00+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; setup_move_size&nbsp;&nbsp;&nbsp; Move
+to high memory size (used with hooks)</p>
+
+<p class=MsoNormalIndent>0214/4&nbsp;&nbsp;&nbsp; 2.00+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; code32_start&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Boot
+loader hook (see below)</p>
+
+<p class=MsoNormalIndent>0218/4&nbsp;&nbsp;&nbsp; 2.00+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ramdisk_image&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; initrd
+load address (set by boot loader)</p>
+
+<p class=MsoNormalIndent>021C/4&nbsp;&nbsp;&nbsp; 2.00+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ramdisk_size&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; initrd
+size (set by boot loader)</p>
+
+<p class=MsoNormalIndent>0220/4&nbsp;&nbsp;&nbsp; 2.00+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; bootsect_kludge&nbsp;&nbsp;&nbsp;&nbsp; DO
+NOT USE - for bootsect.S use only</p>
+
+<p class=MsoNormalIndent>0224/2&nbsp;&nbsp;&nbsp; 2.01+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; heap_end_ptr&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Free
+memory after setup end</p>
+
+<p class=MsoNormalIndent>0226/2&nbsp;&nbsp;&nbsp; N/A &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; pad1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Unused</p>
+
+<p class=MsoNormalIndent>0228/4&nbsp;&nbsp;&nbsp; 2.02+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; cmd_line_ptr&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 32-bit
+pointer to the kernel command line</p>
+
+<p class=MsoNormalIndent>&nbsp;</p>
+
+<p class=MsoNormalIndent><span lang=ZH-CN style='font-family:宋体'>为了前向兼容，如果</span>setup_sects<span
+lang=ZH-CN style='font-family:宋体'>被设置为</span>0<span lang=ZH-CN
+style='font-family:宋体'>，则真实的值为</span>4<span lang=ZH-CN style='font-family:宋体'>。</span></p>
+
+<p class=MsoNormalIndent><span lang=ZH-CN style='font-family:宋体'>如果在</span>0x202<span
+lang=ZH-CN style='font-family:宋体'>偏移处没有发现</span>&quot;HdrS&quot; (0x53726448)
+magic number<span lang=ZH-CN style='font-family:宋体'>，则该启动协议为老版本。对于加载一个老的内核，对于下面的参数有如下假定：</span></p>
+
+<p class=MsoNormalIndent>Image type = zImage</p>
+
+<p class=MsoNormalIndent>initrd not supported</p>
+
+<p class=MsoNormalIndent>Real-mode kernel must be located at 0x90000.</p>
+
+<p class=MsoNormalIndent><span lang=ZH-CN style='font-family:宋体'>否则，</span>version<span
+lang=ZH-CN style='font-family:宋体'>域包含了协议版本，例如协议版本</span>2.01<span lang=ZH-CN
+style='font-family:宋体'>将会在该域包含</span>0x0201<span lang=ZH-CN style='font-family:
+宋体'>。当在</span>header<span lang=ZH-CN style='font-family:宋体'>中设置域的时候，必须确保当前域设置被当前版本协议支持。</span></p>
+
+<p class=MsoNormalIndent><span lang=ZH-CN style='font-family:宋体'>大多数的</span>Bootloader<span
+lang=ZH-CN style='font-family:宋体'>只是简单的将内核直接加载到目的地址。这样的</span>bootloader<span
+lang=ZH-CN style='font-family:宋体'>不需要担心</span>header<span lang=ZH-CN
+style='font-family:宋体'>中大部分域的填充，但是下面的域依然需要填充：</span></p>
+
+<p class=MsoNormalIndent style='margin-left:42.0pt;text-indent:-21.0pt'>1.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><b>type_of_loader: </b><span lang=ZH-CN style='font-family:宋体'>如果你的</span>bootloader<span
+lang=ZH-CN style='font-family:宋体'>在</span>setup.S<span lang=ZH-CN
+style='font-family:宋体'>中已经被预定义了，则在此填充该预定义的值，否则键入</span>0xFF<span lang=ZH-CN
+style='font-family:宋体'>。</span></p>
+
+<p class=MsoNormalIndent style='margin-left:42.0pt;text-indent:-21.0pt'>2.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><b>loadflags, heap_end_ptr: </b><span lang=ZH-CN style='font-family:
+宋体'>如果协议版本是</span>2.01<span lang=ZH-CN style='font-family:宋体'>或者更高，则将</span>setup
+heap<span lang=ZH-CN style='font-family:宋体'>的偏移界限填入到</span>heap_end_ptr<span
+lang=ZH-CN style='font-family:宋体'>中，同时设置</span>loadflags<span lang=ZH-CN
+style='font-family:宋体'>的</span>0x80 bit (CAN_USE_HEAP) <span lang=ZH-CN
+style='font-family:宋体'>。</span>heap_end_ptr<span lang=ZH-CN style='font-family:
+宋体'>是相对于</span>setup<span lang=ZH-CN style='font-family:宋体'>的起始位置</span>(0x200<span
+lang=ZH-CN style='font-family:宋体'>偏移处</span>)<span lang=ZH-CN style='font-family:
+宋体'>。</span></p>
+
+<p class=MsoNormalIndent style='margin-left:42.0pt;text-indent:-21.0pt'>3.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><b>setup_move_size: </b><span lang=ZH-CN style='font-family:宋体'>当使用</span>2.00<span
+lang=ZH-CN style='font-family:宋体'>或</span>2.01<span lang=ZH-CN
+style='font-family:宋体'>协议时，如果实模式内核没有加载在</span>0x90000<span lang=ZH-CN
+style='font-family:宋体'>，内核将会在随后的加载中移动到这里。此时，如果你希望除了内核本身外，还希望移动其他的附加数据（诸如内核命令行），则需要填充该域。</span></p>
+
+<p class=MsoNormalIndent style='margin-left:42.0pt;text-indent:-21.0pt'>4.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><b>ramdisk_image, ramdisk_size: </b><span lang=ZH-CN style='font-family:
+宋体'>如果</span>bootloader<span lang=ZH-CN style='font-family:宋体'>已经加载了一个初始化后的</span>ramdisk<span
+lang=ZH-CN style='font-family:宋体'>（</span>initrd<span lang=ZH-CN
+style='font-family:宋体'>），则设置</span>ramdisk_image<span lang=ZH-CN
+style='font-family:宋体'>为一个</span>32<span lang=ZH-CN style='font-family:宋体'>位的指针，指向</span>ramdisk<span
+lang=ZH-CN style='font-family:宋体'>数据，同时设置</span>ramdisk_sieze<span lang=ZH-CN
+style='font-family:宋体'>为</span>ramdisk<span lang=ZH-CN style='font-family:宋体'>数据的尺寸。</span>initrd<span
+lang=ZH-CN style='font-family:宋体'>通常尽可能位于高端内存，这是由于其有可能被早些时候的内核初始化所覆盖。然而，如果希望所有的内核都能够被读取，则其位置最好不要超过</span>0x3C000000<span
+lang=ZH-CN style='font-family:宋体'>。</span></p>
+
+<p class=MsoNormalIndent style='margin-left:42.0pt;text-indent:-21.0pt'>5.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><b>cmd_line_ptr: </b><span lang=ZH-CN style='font-family:宋体'>如果协议版本为</span>2.02<span
+lang=ZH-CN style='font-family:宋体'>或者更高，则该参数为一</span>32bit<span lang=ZH-CN
+style='font-family:宋体'>的指针，其指向内核命令行。内核命令行可以为与</span>setup<span lang=ZH-CN
+style='font-family:宋体'>末尾和</span>0xA0000<span lang=ZH-CN style='font-family:
+宋体'>之间的任意位置。即使你的</span>bootloader<span lang=ZH-CN style='font-family:宋体'>一个命令行都不需要，也应该填充该域，让其指向一个空的字符串，最好是</span>”auto”<span
+lang=ZH-CN style='font-family:宋体'>。如果该域被设置为</span>0<span lang=ZH-CN
+style='font-family:宋体'>，内核将会认为该</span>bootloader<span lang=ZH-CN
+style='font-family:宋体'>不支持</span>2.02<span lang=ZH-CN style='font-family:宋体'>协议。</span></p>
+
+<h1>4 <span lang=ZH-CN style='font-family:黑体'>内核命令行</span><span lang=ZH-CN> </span></h1>
+
+<p class=MsoNormalIndent><span lang=ZH-CN style='font-family:宋体'>内核命令行已经成为</span>bootloader<span
+lang=ZH-CN style='font-family:宋体'>和内核通讯的重要途径。其中一些选项也是和</span>bootloader<span
+lang=ZH-CN style='font-family:宋体'>本身相关的，请参见下面的“特殊的命令行选项”。</span></p>
+
+<p class=MsoNormalIndent><span lang=ZH-CN style='font-family:宋体'>内核命令行是一个以</span>null<span
+lang=ZH-CN style='font-family:宋体'>为结尾的最大可达</span>255<span lang=ZH-CN
+style='font-family:宋体'>个字符（除去最后的</span>null<span lang=ZH-CN style='font-family:
+宋体'>）的字符串。如果启动协议版本是</span>2.02<span lang=ZH-CN style='font-family:宋体'>或以上，内核命令行的地址通常由</span>cmd_line_ptr<span
+lang=ZH-CN style='font-family:宋体'>给出。如果启动协议版本不是</span>2.02<span lang=ZH-CN
+style='font-family:宋体'>或以上的，内核命令行应该使用下面的协议键入：</span></p>
+
+<p class=MsoNormalIndent style='margin-left:42.0pt;text-indent:-21.0pt'>1.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><span lang=ZH-CN style='font-family:宋体'>在</span>0x0020 (word)<span
+lang=ZH-CN style='font-family:宋体'>偏移处，也就是</span>&quot;cmd_line_magic&quot;<span
+lang=ZH-CN style='font-family:宋体'>，输入</span>0xA33F<span lang=ZH-CN
+style='font-family:宋体'>；</span></p>
+
+<p class=MsoNormalIndent style='margin-left:42.0pt;text-indent:-21.0pt'>2.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><span lang=ZH-CN style='font-family:宋体'>在</span>0x0022 (word)<span
+lang=ZH-CN style='font-family:宋体'>偏移处，也就是</span>&quot;cmd_line_offset&quot;<span
+lang=ZH-CN style='font-family:宋体'>，输入内核命令行的偏移（相对于实模式内核的起始地址）；</span></p>
+
+<p class=MsoNormalIndent style='margin-left:42.0pt;text-indent:-21.0pt'>3.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><span lang=ZH-CN style='font-family:宋体'>内核命令行必须在</span>setup_move_size<span
+lang=ZH-CN style='font-family:宋体'>所覆盖的内存区域，所以可能需要调整</span>setup_move_size<span
+lang=ZH-CN style='font-family:宋体'>域；</span></p>
+
+<h1>5 BOOT<span lang=ZH-CN style='font-family:黑体'>配置范例</span></h1>
+
+<p class=MsoNormalIndent><span lang=ZH-CN style='font-family:宋体'>作为配置范例，假定实模式段的布局如下：</span>
+</p>
+
+<p class=MsoNormalIndent>0x0000-0x7FFF&nbsp;&nbsp;&nbsp;&nbsp; Real mode kernel</p>
+
+<p class=MsoNormalIndent>0x8000-0x8FFF&nbsp;&nbsp;&nbsp;&nbsp; Stack and heap</p>
+
+<p class=MsoNormalIndent>0x9000-0x90FF&nbsp;&nbsp;&nbsp;&nbsp; Kernel command
+line</p>
+
+<p class=MsoNormalIndent><span lang=ZH-CN style='font-family:宋体'>这样的一个</span>bootloader<span
+lang=ZH-CN style='font-family:宋体'>应该在</span>header<span lang=ZH-CN
+style='font-family:宋体'>中键入如下的域：</span></p>
+
+<p class=MsoNormalIndent>&nbsp;</p>
+
+<p class=MsoNormalIndent>unsigned long base_ptr;&nbsp; /* base address for
+real-mode segment */</p>
+
+<p class=MsoNormalIndent>if ( setup_sects == 0 ) {</p>
+
+<p class=MsoNormalIndent>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; setup_sects = 4;</p>
+
+<p class=MsoNormalIndent>}</p>
+
+<p class=MsoNormalIndent>if ( protocol &gt;= 0x0200 ) {</p>
+
+<p class=MsoNormalIndent>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; type_of_loader =
+&lt;type code&gt;;</p>
+
+<p class=MsoNormalIndent>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; if (
+loading_initrd ) {</p>
+
+<p class=MsoNormalIndent>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ramdisk_image
+= &lt;initrd_address&gt;;</p>
+
+<p class=MsoNormalIndent>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ramdisk_size
+= &lt;initrd_size&gt;;</p>
+
+<p class=MsoNormalIndent>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }</p>
+
+<p class=MsoNormalIndent>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; if ( protocol
+&gt;= 0x0201 ) {</p>
+
+<p class=MsoNormalIndent>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; heap_end_ptr
+= 0x9000 - 0x200;</p>
+
+<p class=MsoNormalIndent>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; loadflags
+|= 0x80; /* CAN_USE_HEAP */</p>
+
+<p class=MsoNormalIndent>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }</p>
+
+<p class=MsoNormalIndent>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; if ( protocol
+&gt;= 0x0202 ) {</p>
+
+<p class=MsoNormalIndent>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; cmd_line_ptr
+= base_ptr + 0x9000;</p>
+
+<p class=MsoNormalIndent>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; } else {</p>
+
+<p class=MsoNormalIndent>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; cmd_line_magic&nbsp;
+= 0xA33F;</p>
+
+<p class=MsoNormalIndent>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; cmd_line_offset
+= 0x9000;</p>
+
+<p class=MsoNormalIndent>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; setup_move_size
+= 0x9100;</p>
+
+<p class=MsoNormalIndent>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }</p>
+
+<p class=MsoNormalIndent>} else {</p>
+
+<p class=MsoNormalIndent>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; /* Very old
+kernel */</p>
+
+<p class=MsoNormalIndent>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; cmd_line_magic&nbsp;
+= 0xA33F;</p>
+
+<p class=MsoNormalIndent>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; cmd_line_offset =
+0x9000;</p>
+
+<p class=MsoNormalIndent>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; /* A very old
+kernel MUST have its real-mode code</p>
+
+<p class=MsoNormalIndent>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;
+loaded at 0x90000 */</p>
+
+<p class=MsoNormalIndent>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; if ( base_ptr !=
+0x90000 ) {</p>
+
+<p class=MsoNormalIndent>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; /*
+Copy the real-mode kernel */</p>
+
+<p class=MsoNormalIndent>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; memcpy(0x90000,
+base_ptr, (setup_sects+1)*512);</p>
+
+<p class=MsoNormalIndent>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; /*
+Copy the command line */</p>
+
+<p class=MsoNormalIndent>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; memcpy(0x99000,
+base_ptr+0x9000, 256);</p>
+
+<p class=MsoNormalIndent>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; base_ptr
+= 0x90000;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+/* Relocated */</p>
+
+<p class=MsoNormalIndent>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }</p>
+
+<p class=MsoNormalIndent>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; /* It is
+recommended to clear memory up to the 32K mark */</p>
+
+<p class=MsoNormalIndent>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; memset(0x90000 +
+(setup_sects+1)*512, 0,</p>
+
+<p class=MsoNormalIndent>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+(64-(setup_sects+1))*512);</p>
+
+<p class=MsoNormalIndent>}</p>
+
+<h1>6 <span lang=ZH-CN style='font-family:黑体'>加载剩下的内核</span></h1>
+
+<p class=MsoNormalIndent><span lang=ZH-CN style='font-family:宋体'>非实模式内核开始于内核文件中</span>(setup_sects+1)*512<span
+lang=ZH-CN style='font-family:宋体'>处（如果</span>setupsects==0<span lang=ZH-CN
+style='font-family:宋体'>，则</span>setupsects=4<span lang=ZH-CN style='font-family:
+宋体'>）。其应该被加载到地址</span>0x10000(Image/zImage)<span lang=ZH-CN style='font-family:
+宋体'>或者</span>0x100000(bzImage)<span lang=ZH-CN style='font-family:宋体'>。</span></p>
+
+<p class=MsoNormalIndent><span lang=ZH-CN style='font-family:宋体'>如果协议号</span>&gt;=2.00<span
+lang=ZH-CN style='font-family:宋体'>并且</span>loadflags<span lang=ZH-CN
+style='font-family:宋体'>中的</span>0x01<span lang=ZH-CN style='font-family:宋体'>位</span>(LOAD_HIGH)<span
+lang=ZH-CN style='font-family:宋体'>被设置，则内核为</span>bzImage<span lang=ZH-CN
+style='font-family:宋体'>：</span></p>
+
+<p class=MsoNormalIndent>&nbsp;</p>
+
+<p class=MsoNormalIndent>is_bzImage = (protocol &gt;= 0x0200) &amp;&amp;
+(loadflags &amp; 0x01);</p>
+
+<p class=MsoNormalIndent>load_address = is_bzImage ? 0x100000 : 0x10000;</p>
+
+<p class=MsoNormalIndent>&nbsp;</p>
+
+<p class=MsoNormalIndent><span lang=ZH-CN style='font-family:宋体'>注意</span>Image/zImage<span
+lang=ZH-CN style='font-family:宋体'>内核最大</span>512K<span lang=ZH-CN
+style='font-family:宋体'>，因此其使用了</span>0x10000-0x90000<span lang=ZH-CN
+style='font-family:宋体'>范围的整个内存空间，这表示将这种内核的实模式部分加载到</span>0x90000<span
+lang=ZH-CN style='font-family:宋体'>处是非常恰当的。</span>bzImage<span lang=ZH-CN
+style='font-family:宋体'>内核则需要更多的灵活性。</span></p>
+
+<h1>7 <span lang=ZH-CN style='font-family:黑体'>运行内核</span></h1>
+
+<p class=MsoNormalIndent><span lang=ZH-CN style='font-family:宋体'>内核通过跳转到内核入口处而开始运行，其加载于从实模式内核开始处的</span>0x20<span
+lang=ZH-CN style='font-family:宋体'>段偏移处，也就是说如果实模式内核代码在</span>0x90000<span
+lang=ZH-CN style='font-family:宋体'>，那么内核入口处就在</span>9020:0000<span lang=ZH-CN
+style='font-family:宋体'>。在入口处，</span>ds = es = ss=<span lang=ZH-CN
+style='font-family:宋体'>实模式内核代码的起始处</span>(<span lang=ZH-CN style='font-family:
+宋体'>如果实模式代码起始于</span>0x9000 <span lang=ZH-CN style='font-family:宋体'>，则就为</span>0x9000)<span
+lang=ZH-CN style='font-family:宋体'>，</span>sp<span lang=ZH-CN style='font-family:
+宋体'>应该被正确的建立，通常指向堆的顶部，同时应该禁止中断。另外，为了输出</span>bugs<span lang=ZH-CN
+style='font-family:宋体'>，还要求</span>bootloader<span lang=ZH-CN style='font-family:
+宋体'>设置</span>fs = gs = ds = es = ss<span lang=ZH-CN style='font-family:宋体'>。按照上面的例子，我们应该做到：</span></p>
+
+<p class=MsoNormalIndent>&nbsp;</p>
+
+<p class=MsoNormalIndent>/* Note: in the case of the &quot;old&quot; kernel
+protocol, base_ptr must</p>
+
+<p class=MsoNormalIndent>&nbsp;&nbsp; be == 0x90000 at this point; see the
+previous sample code */</p>
+
+<p class=MsoNormalIndent>seg = base_ptr &gt;&gt; 4;</p>
+
+<p class=MsoNormalIndent>cli(); /* Enter with interrupts disabled! */</p>
+
+<p class=MsoNormalIndent>/* Set up the real-mode kernel stack */</p>
+
+<p class=MsoNormalIndent>_SS = seg;</p>
+
+<p class=MsoNormalIndent>_SP = 0x9000; /* Load SP immediately after loading SS!
+*/</p>
+
+<p class=MsoNormalIndent>_DS = _ES = _FS = _GS = seg;</p>
+
+<p class=MsoNormalIndent>jmp_far(seg+0x20, 0);&nbsp;&nbsp; /* Run the kernel */</p>
+
+<p class=MsoNormalIndent>&nbsp;</p>
+
+<p class=MsoNormalIndent><span lang=ZH-CN style='font-family:宋体'>如果</span>bootsector<span
+lang=ZH-CN style='font-family:宋体'>存储在软盘上，其要求在运行内核前关掉软盘马达，这是由于内核启动后，中断被禁止，因此导致马达将不会被关掉。</span></p>
+
+<p class=MsoNormalIndent>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+</div>
+
+</body>
+
+</html>
